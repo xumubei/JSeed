@@ -1,0 +1,23 @@
+server:
+  address: 127.0.0.1
+spring:
+  application:
+    name: jseed-starter-example
+  datasource:
+    url: jdbc:h2:mem:jseed-${random.uuid}
+    username: sa
+  sql:
+    init:
+      mode: always
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  split:
+    tables: [demo_partition]
+    rule: demoPartition
+jseed:
+  datascope:
+    enabled: true
+  swagger:
+    title: JSeed examples
+    description: Calls for each starter

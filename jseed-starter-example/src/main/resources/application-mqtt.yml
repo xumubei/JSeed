@@ -1,0 +1,5 @@
+jseed:
+  mqtt:
+    enabled: true
+    host: ${MQTT_HOST:localhost}
+    port: ${MQTT_PORT:1883}

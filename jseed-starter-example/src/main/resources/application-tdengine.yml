@@ -1,0 +1,6 @@
+jseed:
+  tdengine:
+    enabled: true
+    url: ${TDENGINE_URL:jdbc:TAOS-WS://localhost:6041/jseed}
+    username: ${TDENGINE_USER}
+    password: ${TDENGINE_PASSWORD}

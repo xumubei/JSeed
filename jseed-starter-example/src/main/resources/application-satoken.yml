@@ -1,0 +1,7 @@
+jseed:
+  satoken:
+    enabled: true
+security:
+  excludes: [/demo/hello, /v3/api-docs/**, /swagger-ui/**, /swagger-ui.html]
+sa-token:
+  jwt-secret-key: ${DEMO_JWT_SECRET}

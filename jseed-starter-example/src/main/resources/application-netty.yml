@@ -1,0 +1,5 @@
+jseed:
+  netty:
+    enabled: true
+    server-enabled: true
+    port: 0

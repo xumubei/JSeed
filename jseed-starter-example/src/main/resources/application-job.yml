@@ -1,0 +1,6 @@
+jseed:
+  job:
+    enabled: true
+    admin-addresses: ${XXL_JOB_ADMIN_URL}
+    access-token: ${XXL_JOB_ACCESS_TOKEN}
+    app-name: jseed-demo
