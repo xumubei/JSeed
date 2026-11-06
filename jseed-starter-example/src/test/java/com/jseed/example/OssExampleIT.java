@@ -27,19 +27,16 @@ import java.util.List;
 @Testcontainers
 class OssExampleIT {
     @Container
-    static final GenericContainer<?> MINIO =
-            new GenericContainer<>("quay.io/minio/minio:RELEASE.2025-04-22T22-12-26Z")
-                    .withEnv("MINIO_ROOT_USER", "jseed-integration")
-                    .withEnv("MINIO_ROOT_PASSWORD", "integration-only")
-                    .withCommand("server", "/data")
-                    .withExposedPorts(9000)
-                    .waitingFor(Wait.forHttp("/minio/health/ready"));
+    static final GenericContainer<?> S3 =
+            new GenericContainer<>("adobe/s3mock:4.12.4")
+                    .withExposedPorts(9090)
+                    .waitingFor(Wait.forHttp("/").forPort(9090));
 
     @DynamicPropertySource
     static void endpoint(DynamicPropertyRegistry properties) {
         properties.add(
                 "oss.endpoint",
-                () -> "http://" + MINIO.getHost() + ":" + MINIO.getMappedPort(9000));
+                () -> "http://" + S3.getHost() + ":" + S3.getMappedPort(9090));
         properties.add("oss.access-key", () -> "jseed-integration");
         properties.add("oss.secret-key", () -> "integration-only");
     }

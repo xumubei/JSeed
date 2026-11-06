@@ -4,6 +4,33 @@
 
 JSeed 提供一组可独立安装、按需引入的 Spring Boot Starter。项目基于 Java 17 和 Spring Boot 4.1。
 
+## NestJS 脚手架
+
+TypeScript 版位于独立的 [NestJS Starter 仓库](https://github.com/xumubei/nestjs-starter)。
+
+## 支持的模块
+
+| Spring Boot Starter | Java 功能 |
+| --- | --- |
+| `jseed-core-starter` | 统一 API 响应、异常和工具类 |
+| `jseed-web-starter` | Spring MVC、操作日志和 JSON 脱敏 |
+| `jseed-swagger-starter` | OpenAPI 和 Swagger UI |
+| `jseed-satoken-starter` | Sa-Token 认证与授权 |
+| `jseed-mybatis-starter` | MyBatis-Plus 和动态表路由 |
+| `jseed-datascope-starter` | 按数据权限过滤 SQL |
+| `jseed-crypto-starter` | 加密、哈希和签名 |
+| `jseed-job-starter` | XXL-Job 执行器集成 |
+| `jseed-redis-starter` | 缓存、过期时间和分布式锁 |
+| `jseed-kafka-starter` | 消息发布、消费、重试和死信主题 |
+| `jseed-rabbitmq-starter` | 消息发布、消费、重试和死信队列 |
+| `jseed-mqtt-starter` | MQTT 消息发布与订阅 |
+| `jseed-netty-starter` | Netty TCP 客户端和服务端 |
+| `jseed-websocket-starter` | WebSocket 会话与广播 |
+| `jseed-oss-starter` | MinIO 上传、下载和对象管理 |
+| `jseed-tdengine-starter` | TDengine SQL 查询与写入 |
+
+配置和调用方式见 [Java 示例指南](jseed-starter-example/README.md)。
+
 ## 运行示例
 
 在仓库根目录构建示例及其依赖，然后启动应用。

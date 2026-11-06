@@ -4,6 +4,33 @@
 
 JSeed is a collection of independently installable Spring Boot starters. The build targets Java 17 and Spring Boot 4.1.
 
+## NestJS starter
+
+The TypeScript starter is available in the [independent NestJS Starter repository](https://github.com/xumubei/nestjs-starter).
+
+## Supported modules
+
+| Spring Boot starter | Java capabilities |
+| --- | --- |
+| `jseed-core-starter` | Shared API responses, exceptions, and utilities |
+| `jseed-web-starter` | Spring MVC, operation logs, and JSON masking |
+| `jseed-swagger-starter` | OpenAPI and Swagger UI |
+| `jseed-satoken-starter` | Sa-Token authentication and authorization |
+| `jseed-mybatis-starter` | MyBatis-Plus and dynamic table routing |
+| `jseed-datascope-starter` | SQL filtering by data permissions |
+| `jseed-crypto-starter` | Encryption, hashing, and signing |
+| `jseed-job-starter` | XXL-Job executor integration |
+| `jseed-redis-starter` | Cache, TTLs, and distributed locks |
+| `jseed-kafka-starter` | Publishing, consumption, retries, and dead-letter topics |
+| `jseed-rabbitmq-starter` | Publishing, consumption, retries, and dead-letter queues |
+| `jseed-mqtt-starter` | MQTT publishing and subscriptions |
+| `jseed-netty-starter` | Netty TCP client and server |
+| `jseed-websocket-starter` | WebSocket sessions and broadcast |
+| `jseed-oss-starter` | MinIO uploads, downloads, and object management |
+| `jseed-tdengine-starter` | TDengine SQL queries and writes |
+
+See the [Java example guide](jseed-starter-example/README.md) for configuration and usage.
+
 ## Run the example
 
 From the repository root, build the example and its dependencies:
